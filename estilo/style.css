@@ -1,15 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-  font-family: "titulo";
-  src: url(fontes/BebasNeue-Regular.ttf)
-  format("truetype");
-}
-@font-face {
-  font-family: "robo";
-  src: url(fontes/idroid.otf)
-  format("opentype");
-}
 
 /* 
            VARIÀVEIS
@@ -42,14 +32,27 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0;}
     
 
-
+@font-face {
+  font-family: "titulo";
+  src: url(../fontes/BebasNeue-Regular.ttf)
+  format("truetype");
 }
+
+
+@font-face {
+  font-family: "robo";
+  src: url(../fontes/idroid.otf)
+  format("opentype");
+}
+
+
  body{
    background-color: #ebe5c5;
    line-height: 2em;
+   font-weight: normal;
  }  
      
      
@@ -66,6 +69,7 @@ header{
       text-align: center;
       font-weight: normal;
       padding: 20px ;
+      
       
       
          
@@ -112,23 +116,30 @@ nav > a:hover {
     box-shadow: 0px 0px 10px rgb(0 0 0 / 42%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
-main  img {
+    display: block;
+ }
+main  img 
+{
   width: 100%;
 }
-main img.pequena {
-  width: 50%;
+
+main img.pequena 
+{
+  width: 350px;
   display: block;
   margin: auto;
 
 }
+
+
 article > h1 {
   font-family:'robo';
   font-size: 28px;
   color: #063d1e;
   font-weight: normal;
   padding: 10px; 
-  
+  background-color: #83e1ad;
+  background-image: linear-gradient(to right, #83e1ad, #effbf4);
 }
 
 h2 {
